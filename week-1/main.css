@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+h1 {
+    font-size: 3.5rem;
+    text-align: center;
+}
+h1 a {
+    color: #333;
+    text-decoration: none;
+}
+
+h1, h2, nav a {
+    font-family: 'Lora';
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #333;
+    margin: 0 15px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    text-align: center;
+    font-size: 2rem;
+}
+
+nav a, h2 a, p a {
+    color: #666;
+    text-decoration: none;
+}
+
+nav a:hover, h2 a:hover, p a:hover {
+    color: #00ddff;
+}
+
+nav a:active, nav a:visited, h2 a:active, h2 a:visited, p a:active, p a:visited {
+    color: #666;
+}
+
+nav a.active, h2 a.active, p a.active {
+    color: #DEB887;
+}
+
+hr {
+    border-color: #d0d0d0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.post-date {
+    text-align: right;
+}
+
+@media (min-width: 650px) {
+    h1 a {
+        font-size: 4rem;
+    }
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav li {
+        padding: 0 20px;
+        font-size: 1.5rem;
+    }
+
+    img {
+        width: 200px;
+    }
+
+    article {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 15px;
+    }
+
+    article hr {
+        border: none;
+        border-right: 1px solid #d0d0d0;
+        height: 350px;
+    }
+
+
+
+}
