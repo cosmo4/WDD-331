@@ -1,0 +1,27 @@
+/* my colors */
+/* variables */
+/* mixins */
+body {
+  background: #879e3d;
+}
+
+#contactform {
+  background-color: #FFFFFF;
+}
+#contactform input, #contactform textarea {
+  background-color: #ffffff;
+  flex: 2;
+}
+@media (small) {
+  #contactform {
+    width: 90%;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #contactform input {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

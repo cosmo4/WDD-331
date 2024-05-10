@@ -1,0 +1,53 @@
+
+/* my colors */
+$body-background-color: #879e3d;
+$form-background-color: #FFFFFF;
+$input-color: #ffffff;
+$headlines-color: #ffffff;
+
+/* variables */
+$break-small: 250px;
+$break-medium: 450px;
+$break-large: 600px;
+
+/* mixins */
+@mixin center($width, $max-width: 960px) {
+    width: $width;
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin breakpoint($break) {
+@if $break == large {
+    @media (max-width: $break-large) { @content; }
+}
+@else if $break-medium == medium {
+    @media (max-width: $break-medium) { @content; }
+}
+@else if $break-small == small {
+    @media (max-width: $break-small) { @content; }
+} @else {
+    @media ($break) { @content; }
+}
+}
+
+body {
+    background: $body-background-color;
+}
+
+#contactform {
+    background-color: $form-background-color;
+    input, textarea {
+        background-color: $input-color;
+        flex: 2;
+    }
+    @include breakpoint(small) {
+        & {
+            @include center(90%, 650px);
+            input {
+                width: 100%;
+            }
+        }
+    }
+}
